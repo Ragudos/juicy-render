@@ -1,0 +1,11 @@
+packages/eslint-config
+node_modules
+packages/vanilla-toast/src
+packages/vanilla-toast/esbuild.dev.mjs
+packages/vanilla-toast/esbuild.build.mjs
+.github
+packages/prettier-config
+packages/docs
+test
+
+packages/vanilla-toast/dev

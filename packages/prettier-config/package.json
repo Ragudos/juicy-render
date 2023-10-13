@@ -1,0 +1,25 @@
+{
+  "name": "@juicy-render/prettier-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "main": "index.cjs",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "keywords": [
+    "prettier",
+    "vanilla-toast-prettier-config"
+  ],
+  "author": "Aaron",
+  "license": "MIT"
+}

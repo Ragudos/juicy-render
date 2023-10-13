@@ -1,0 +1,3 @@
+packages:
+  - "./packages/vanilla-toast"
+  - "./packages/docs"

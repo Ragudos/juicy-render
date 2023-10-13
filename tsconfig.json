@@ -1,0 +1,46 @@
+{
+  // Provide an include or reference
+  "compilerOptions": {
+    "incremental": true,
+    "sourceMap": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "target": "ES2020",
+    "module": "ES2020",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "listEmittedFiles": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "composite": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "references": [
+    {
+      "path": "./packages/juicy-render"
+    }
+  ],
+  "exclude": [
+    "**/dist/**",
+    "**/*.mjs",
+    "**/*.js",
+    "**/*.cjs"
+  ]
+}

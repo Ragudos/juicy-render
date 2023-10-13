@@ -1,0 +1,6 @@
+dist
+node_modules
+build
+.eslintrc*
+@bionic-reader/prettier-config/**/*.cjs
+@bionic-reader/eslint-config/**/*.cjs

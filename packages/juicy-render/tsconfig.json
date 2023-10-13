@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    "typeRoots": ["node_modules/@types", "src/types/declaration.d.ts"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true, 
+
+    "allowJs": true,
+
+    "emitDeclarationOnly": true,
+
+    "declaration": true,
+    "declarationDir": "build/@types",
+
+    "rootDir": "src",
+    "outDir": "build",
+  },
+  "include": ["**/*.ts", "**/*.module.css"],
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "src/legacy/**"]
+}

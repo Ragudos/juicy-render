@@ -1,0 +1,27 @@
+{
+  "name": "@juicy-render/juicy-render",
+  "version": "0.7.4",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./build/@types/index.d.ts",
+      "import": "./build/index.min.mjs"
+    },
+    "./index.min.css": "./build/index.min.css"
+  },
+  "main": "./build/index.min.mjs",
+  "types": "./build/@types/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "node esbuild.build.mjs && tsc --build",
+    "dev": "node esbuild.dev.mjs"
+  },
+  "author": "Aaron",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.4",
+    "typescript": "^5.2.2"
+  }
+}

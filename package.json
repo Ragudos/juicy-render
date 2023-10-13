@@ -1,0 +1,55 @@
+{
+  "name": "@webdevaaron/juicy-render",
+  "version": "0.7.4",
+  "description": "A dependency-free toast notification library for vanilla users of JavaScript!",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "files": [
+    "./packages/juicy-render/build"
+  ],
+  "exports": {
+    ".": {
+      "types": "./packages/juicy-render/build/@types/index.d.ts",
+      "import": "./packages/juicy-render/build/index.min.mjs"
+    },
+    "./index.min.css": "./packages/juicy-render/build/index.min.css"
+  },
+  "main": "./packages/juicy-render/build/index.min.mjs",
+  "types": "./packages/juicy-render/build/@types/index.d.ts",
+  "scripts": {
+    "build": "npm run -w @juicy-render/juicy-render build",
+    "dev": "npm run -w @juicy-render/juicy-render dev",
+    "browser:install": "pnpm exec playwright install --with-deps",
+    "test": "pnpm exec playwright test && pnpm exec playwright show-report",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier -w \"**/*.{ts,tsx,js,jsx}\" && pnpm run type-check && pnpm run lint:fix",
+    "prepare": "husky install"
+  },
+  "workspaces": [
+    "./packages/juicy-render"
+  ],
+  "keywords": [
+    "juicy-render"
+  ],
+  "packageManager": "pnpm@8.8.0",
+  "author": "Aaron",
+  "license": "MIT",
+  "devDependencies": {
+    "@juicy-render/eslint-config": "file:./packages/eslint-config",
+    "@juicy-render/prettier-config": "file:./packages/prettier-config",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "@playwright/test": "^1.38.1"
+  }
+}
