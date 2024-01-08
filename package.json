@@ -42,7 +42,7 @@
     "@juicy-render/eslint-config": "file:./packages/eslint-config",
     "@juicy-render/prettier-config": "file:./packages/prettier-config",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
+    "@typescript-eslint/parser": "^6.18.0",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
